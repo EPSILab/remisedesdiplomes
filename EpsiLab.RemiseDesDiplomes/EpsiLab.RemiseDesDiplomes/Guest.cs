@@ -9,10 +9,10 @@ namespace EpsiLab.RemiseDesDiplomes
     {
         public Guest(string firstName, string lastName)
         {
-            /// TODO
+            this.FirstName = firstName;
+            this.LastName = lastName;
         }
 
-        private string _firstName;
         public string FirstName 
         {
             get { return _firstName;}
@@ -23,10 +23,20 @@ namespace EpsiLab.RemiseDesDiplomes
             }
         }
 
-        
-        public string LastName { get; set; }
+        public string LastName
+        {
+            get { return _lastName; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    _lastName = value;
+            }
+        }
 
         public bool IsHere { get; set; }
         public DateTime DateVenue { get; set; }
+
+        private string _firstName;
+        private string _lastName;
     }
 }
