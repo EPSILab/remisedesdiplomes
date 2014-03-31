@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EpsiLab.RemiseDesDiplomes
+namespace RemiseDesDiplomes.Model
 {
     public class Guest
     {
