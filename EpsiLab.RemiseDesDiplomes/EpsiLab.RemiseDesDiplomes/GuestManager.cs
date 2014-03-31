@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EpsiLab.RemiseDesDiplomes
 {
@@ -10,25 +6,15 @@ namespace EpsiLab.RemiseDesDiplomes
     {
         private GuestManager() {}
 
-        public static GuestManager Instance
-        {
-            get
-            {
-                if (s_instance == null)
-                {
-                    s_instance = new GuestManager();
-                }
-                return s_instance;
-            }
-        }
+        public static GuestManager Instance { get { return _instance ?? (_instance = new GuestManager()); } }
 
         public void Init(string filePath)
         {
-            this._filePath = filePath;
+            _filePath = filePath;
 
-            this.Guests.Add(new Guest("Paul", "GUILBERT"));
-            this.Guests.Add(new Guest("Nicolas", "JANSSOONE"));
-            this.Guests.Add(new Guest("Antoine", "Deleplanque"));
+            Guests.Add(new Guest("Paul", "GUILBERT"));
+            Guests.Add(new Guest("Nicolas", "JANSSOONE"));
+            Guests.Add(new Guest("Antoine", "Deleplanque"));
         }
 
         public IList<Guest> Guests
@@ -39,7 +25,6 @@ namespace EpsiLab.RemiseDesDiplomes
 
         private IList<Guest> _guests = new List<Guest>();
         private string _filePath = string.Empty;
-        private static GuestManager s_instance = null;
-
+        private static GuestManager _instance;
     }
 }

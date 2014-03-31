@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace EpsiLab.RemiseDesDiplomes
 {
@@ -9,16 +6,16 @@ namespace EpsiLab.RemiseDesDiplomes
     {
         public Guest(string firstName, string lastName)
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
+            FirstName = firstName;
+            LastName = lastName;
         }
 
         public string FirstName 
         {
             get { return _firstName;}
             set 
-            { 
-                if (!String.IsNullOrEmpty(value))
+            {
+                if (!string.IsNullOrWhiteSpace(value))
                     _firstName = value;
             }
         }
@@ -28,7 +25,7 @@ namespace EpsiLab.RemiseDesDiplomes
             get { return _lastName; }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (!string.IsNullOrWhiteSpace(value))
                     _lastName = value;
             }
         }

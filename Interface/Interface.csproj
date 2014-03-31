@@ -93,6 +93,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EpsiLab.RemiseDesDiplomes\EpsiLab.RemiseDesDiplomes\EpsiLab.RemiseDesDiplomes.csproj">
+      <Project>{78c071e4-41b8-4169-965e-bb8a0351d1ea}</Project>
+      <Name>EpsiLab.RemiseDesDiplomes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
