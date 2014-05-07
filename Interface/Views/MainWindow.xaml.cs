@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace RemiseDesDiplomes.View
+namespace RemiseDesDiplomes.View.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
