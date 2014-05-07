@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemiseDesDiplomes.Model", "EpsiLab.RemiseDesDiplomes\EpsiLab.RemiseDesDiplomes\RemiseDesDiplomes.Model.csproj", "{78C071E4-41B8-4169-965E-BB8A0351D1EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemiseDesDiplomes.View", "Interface\RemiseDesDiplomes.View.csproj", "{C48986FA-4A0E-405E-BA89-A562C4B3822A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemiseDesDiplomes.ViewModel", "RemiseDesDiplomes.ViewModel\RemiseDesDiplomes.ViewModel.csproj", "{B6C44F5F-8219-4C86-9410-5855A08EB11B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C48986FA-4A0E-405E-BA89-A562C4B3822A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C48986FA-4A0E-405E-BA89-A562C4B3822A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C48986FA-4A0E-405E-BA89-A562C4B3822A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C44F5F-8219-4C86-9410-5855A08EB11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C44F5F-8219-4C86-9410-5855A08EB11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C44F5F-8219-4C86-9410-5855A08EB11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C44F5F-8219-4C86-9410-5855A08EB11B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
