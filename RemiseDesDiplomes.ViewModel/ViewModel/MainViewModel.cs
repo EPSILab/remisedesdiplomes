@@ -1,4 +1,6 @@
+using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
+using RemiseDesDiplomes.Model;
 
 namespace RemiseDesDiplomes.ViewModel.ViewModel
 {
@@ -16,6 +18,8 @@ namespace RemiseDesDiplomes.ViewModel.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        public ObservableCollection<Guest> ListeGuests { get; private set; }
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -29,6 +33,9 @@ namespace RemiseDesDiplomes.ViewModel.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+
+            GuestManager.Instance.Init(string.Empty);
+            ListeGuests = new ObservableCollection<Guest>(GuestManager.Instance.Guests);
         }
     }
 }
