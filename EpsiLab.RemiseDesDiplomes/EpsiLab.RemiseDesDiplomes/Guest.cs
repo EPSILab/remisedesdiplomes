@@ -4,12 +4,7 @@ namespace RemiseDesDiplomes.Model
 {
     public class Guest
     {
-        public Guest(string firstName, string lastName)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-        }
-
+        private string _firstName;
         public string FirstName 
         {
             get { return _firstName;}
@@ -20,6 +15,7 @@ namespace RemiseDesDiplomes.Model
             }
         }
 
+        private string _lastName;
         public string LastName
         {
             get { return _lastName; }
@@ -31,9 +27,7 @@ namespace RemiseDesDiplomes.Model
         }
 
         public bool IsHere { get; set; }
-        public DateTime DateVenue { get; set; }
 
-        private string _firstName;
-        private string _lastName;
+        public DateTime ComingDate { get; set; }
     }
 }
