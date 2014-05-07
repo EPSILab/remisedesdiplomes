@@ -1,8 +1,9 @@
 using System.Collections.ObjectModel;
 using GalaSoft.MvvmLight;
 using RemiseDesDiplomes.Model;
+using RemiseDesDiplomes.ViewModel.ViewModel.Abstract;
 
-namespace RemiseDesDiplomes.ViewModel.ViewModel
+namespace RemiseDesDiplomes.ViewModel.ViewModel.Concrete
 {
     /// <summary>
     /// This class contains properties that the main View can data bind to.
@@ -16,7 +17,7 @@ namespace RemiseDesDiplomes.ViewModel.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    internal sealed class MainViewModel : ViewModelBase, IMainViewModel
     {
         public ObservableCollection<Guest> ListeGuests { get; private set; }
 

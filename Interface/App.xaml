@@ -5,8 +5,9 @@
              d1p1:Ignorable="d"
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModel="clr-namespace:RemiseDesDiplomes.ViewModel.ViewModel;assembly=RemiseDesDiplomes.ViewModel"
+             xmlns:concrete="clr-namespace:RemiseDesDiplomes.ViewModel.ViewModel.Concrete;assembly=RemiseDesDiplomes.ViewModel"
              StartupUri="MainWindow.xaml" >
   <Application.Resources>
-    <viewModel:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
+    <concrete:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
   </Application.Resources>
 </Application>
