@@ -35,8 +35,12 @@ namespace RemiseDesDiplomes.ViewModel.ViewModel.Concrete
             ////    // Code runs "for real"
             ////}
 
-            GuestManager.Instance.Init(string.Empty);
-            ListeGuests = new ObservableCollection<Guest>(GuestManager.Instance.Guests);
+            ListeGuests = new ObservableCollection<Guest>
+            {
+                new Guest {FirstName = "Paul", LastName = "GUILBERT"},
+                new Guest {FirstName = "Nicolas", LastName = "JANSSOONE"},
+                new Guest {FirstName = "Antoine", LastName = "Deleplanque"}
+            };
         }
     }
 }
